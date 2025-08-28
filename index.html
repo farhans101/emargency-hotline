@@ -7,25 +7,34 @@
     <link rel="stylesheet" href="style/styles.css">
  </head>
  <body>
-     <!-- Navbar -->
-  <header class="navbar">
-    <div class="logo">
-      <img src="images/assets/logo.png" alt="Bangladesh Logo">
-      <span>Emergency <br> Service</span>
+<!-- Navbar -->
+<header class="navbar">
+  <div class="logo">
+    <img src="images/assets/logo.png" alt="Bangladesh Logo">
+    <span>Emergency <br> Service</span>
+  </div>
+
+  <div class="nav-right">
+    <!-- Heart Count -->
+    <div class="counter img">
+      <span id="heartCount">0</span>
+      <img src="images/assets/heart.png" alt="">
     </div>
 
-    <div class="nav-right">
-      <div class="counter img">
-        <span id="heartCount">0</span>
-        <img src="images/assets/heart.png" alt="">
-      </div>
-      <div class="counter img.icon">
-        <span id="coinCount">100</span>
-        <img src="images/assets/coin.png">
-      </div>
-      <button id="copyBtn">2 Copy</button>
+    <!-- Coin / Call Count -->
+    <div class="counter img.icon">
+      <span id="coinCount">100</span>
+      <img src="images/assets/coin.png" alt="">
     </div>
-  </header>
+
+    <!-- Copy Count -->
+<div class="counter img">
+  <span id="copyCount">0 Copy</span>
+</div>
+
+  </div>
+</header>
+
 
   <!-- Banner -->
   <section class="banner">
