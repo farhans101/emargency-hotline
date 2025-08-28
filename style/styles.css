@@ -91,6 +91,129 @@
   margin: auto;
 }
 
+
+/* Main Section will starts */
+
+
+.main-section {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: #f5fdf7;
+}
+
+/* Card Section */
+.card-section {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.heart-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: gray;
+}
+
+.hotline {
+  font-size: 22px;
+  margin: 8px 0;
+}
+
+.badge {
+  display: inline-block;
+  background: #eee;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+/* Card buttons */
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.copy-btn, .call-btn {
+  flex: 1;
+  padding: 6px;
+  margin: 3px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.copy-btn {
+  background: #f2f2f2;
+}
+
+.call-btn {
+  background: #00b34d;
+  color: #fff;
+}
+
+/* History Section */
+.history-section {
+  flex: 1;
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.history-header h3 {
+  margin: 0;
+}
+
+#historyList {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+}
+
+#historyList li {
+  border-bottom: 1px solid #ddd;
+  padding: 6px 0;
+}
+
 /* Responsive Design for mobile view */
 
 
@@ -141,5 +264,17 @@
 
   .banner p {
     font-size: 12px;
+  }
+}
+
+
+/* main section responsive */
+
+@media (max-width: 768px) {
+  .main-section {
+    flex-direction: column;
+  }
+  .history-section {
+    max-height: auto;
   }
 }
